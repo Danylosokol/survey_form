@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg");
+  background-size: cover;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  z-index: -1;
+  transform: scale(1.1);
+  overflow: hidden;
+}
+
+#background::before {
+  background-color: #0000a0;
+  opacity: 40%;
+  position: fixed;
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 0 0 0;
+  margin-bottom: 10rem;
+}
+
+#title {
+  font-weight: 400;
+}
+
+#description {
+  font-style: italic;
+}
