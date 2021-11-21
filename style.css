@@ -40,25 +40,40 @@ body {
 
 header {
   text-align: center;
-  padding: 3rem 0 0 0;
+  padding: 4rem 0 0 0;
   font-size: 1.25rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 #title {
+  font-size: 2.2rem;
   font-weight: 400;
+  margin-bottom: 0.2rem;
 }
 
 #description {
   font-style: italic;
+  font-weight: 200;
 }
 
 main {
-  width: 45rem;
+  width: 50%;
   height: auto;
   margin: 0 auto 0 auto;
   position: relative;
   border-radius: 5px;
+}
+
+@media screen and (max-width: 1150px) {
+  main {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  main {
+    width: 100%;
+  }
 }
 
 main::before {
@@ -69,14 +84,34 @@ main::before {
   position: absolute;
   content: "";
   background-color: #000;
-  opacity: 50%;
+  opacity: 70%;
   border-radius: 5px;
 }
 
 #survey-form {
   position: relative;
-  padding: 2rem 3rem;
+  padding: 1rem 3rem;
   font-size: 1.15rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 1px solid #85c1e9;
+  box-shadow: 0 0 3px 3px #2874a6;
+}
+
+input[type="checkbox"]:focus,
+input[type="radio"]:focus {
+  outline: 0px;
+  box-shadow: none;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: 1.25rem;
+  height: 1.25rem;
+  vertical-align: middle;
 }
 
 #name,
@@ -84,17 +119,23 @@ main::before {
 #comments,
 #number,
 select {
-  width: 30rem;
+  padding: 0.25rem;
+  width: 100%;
   height: 2rem;
   font-size: 1.05rem;
   color: #484848;
-  border: 0px solid #000;
+  border: 0px solid #fff;
   border-radius: 5px;
+}
+
+select {
+  width: 101%;
+  height: 2.3rem;
 }
 
 label {
   display: block;
-  margin: 1rem 0 0.5rem 0;
+  margin: 1.25rem 0 0.5rem 0;
 }
 
 span {
@@ -102,15 +143,14 @@ span {
 }
 
 #survey-form p {
-  margin: 1rem 0 0.5rem 0;
+  margin: 1.25rem 0 0.5rem 0;
 }
 
 .selection label {
-  margin: 0rem;
+  margin: 0 0 0.35rem 0;
 }
 
 #comments {
-  width: 100%;
   height: 10rem;
 }
 
