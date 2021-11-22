@@ -39,15 +39,21 @@
 
       <div class="selection">
         <p>Would you recommend freeCodeCamp to a friend?</p>
-        <label for="definitely">
+        <label for="definitely" class="check_label">
           <input id="definitely" type="radio" name="recommend" value="Deffinitely" />
-          Definitely</label>
-        <label for="maybe">
+          Definitely
+          <span class="radiomark"></span>
+        </label>
+        <label for="maybe" class="check_label">
           <input id="maybe" type="radio" name="recommend" value="Maybe" />
-          Maybe</label>
-        <label for="not_sure">
+          Maybe
+          <span class="radiomark"></span>
+        </label>
+        <label for="not_sure" class="check_label">
           <input id="not_sure" type="radio" name="recommend" value="Not sure">
-          Not sure</label>
+          Not sure
+          <span class="radiomark"></span>
+        </label>
       </div>
       <label for="second_drop">What is your favorite feature of freeCodeCamp?</label>
       <select id="second_drop" name="feature">
@@ -60,39 +66,61 @@
 
       <div class="selection">
         <p>What would you like to see improved? <span>(Check all that apply)</span></p>
-        <label for="frontend">
+        <label for="frontend" class="check_label">
           <input id="frontend" type="checkbox" name="improve" value="Front-end Projects" />
-          Front-end Projects</label>
-        <label for="backend">
+          Front-end Projects
+          <span class="checkmark"></span>
+        </label>
+        <label for="backend" class="check_label">
           <input id="backend" type="checkbox" name="improve" value="Back-end Projects" />
-          Back-end Projects</label>
-        <label for="data_visual">
+          Back-end Projects
+          <span class="checkmark"></span>
+        </label>
+        <label for="data_visual" class="check_label">
           <input id="data_visual" type="checkbox" name="improve" value="Data Visualization" />
-          Data Visualization</label>
-        <label for="challenges">
+          Data Visualization
+          <span class="checkmark">
+        </label>
+        <label for="challenges" class="check_label">
           <input id="challenges" type="checkbox" name="improve" value="Challenges" />
-          Challenges</label>
-        <label for="open_source">
+          Challenges
+          <span class="checkmark"></span>
+        </label>
+        <label for="open_source" class="check_label">
           <input id="open_source" type="checkbox" name="improve" value="Open Source Community" />
-          Open Source Community</label>
-        <label for="help_rooms">
+          Open Source Community
+          <span class="checkmark"></span>
+        </label>
+        <label for="help_rooms" class="check_label">
           <input id="help_rooms" type="checkbox" name="improve" value="Gitter help rooms" />
-          Gitter help rooms</label>
-        <label for="videos">
+          Gitter help rooms
+          <span class="checkmark"></span>
+        </label>
+        <label for="videos" class="check_label">
           <input id="videos" type="checkbox" name="improve" value="Vidoes" />
-          Videos</label>
-        <label for="meetups">
+          Videos
+          <span class="checkmark"></span>
+        </label>
+        <label for="meetups" class="check_label">
           <input id="meetups" type="checkbox" name="improve" value="City Meetups" />
-          City Meetups</label>
-        <label for="wiki">
+          City Meetups
+          <span class="checkmark"></span>
+        </label>
+        <label for="wiki" class="check_label">
           <input id="wiki" type="checkbox" name="improve" value="Wiki" />
-          Wiki</label>
-        <label for="forum">
+          Wiki
+          <span class="checkmark"></span>
+        </label>
+        <label for="forum" class="check_label">
           <input id="forum" type="checkbox" name="improve" value="Forum" />
-          Forum</label>
-        <label for="add_courses">
+          Forum
+          <span class="checkmark"></span>
+        </label>
+        <label for="add_courses" class="check_label">
           <input id="add_courses" type="checkbox" name="improve" value="Additional Courses">
-          Additional Courses</label>
+          Additional Courses
+          <span class="checkmark"></span>
+        </label>
       </div>
       <label for="comments">Any comments or suggestions?</label>
       <textarea id="comments" name="comments" placeholder="Enter your comment here..."></textarea>

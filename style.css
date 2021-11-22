@@ -53,7 +53,7 @@ header {
 
 #description {
   font-style: italic;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 main {
@@ -68,11 +68,23 @@ main {
   main {
     width: 75%;
   }
+  #title {
+    font-size: 2.2rem;
+  }
+  #description {
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (max-width: 580px) {
   main {
     width: 100%;
+  }
+  #title {
+    font-size: 2rem;
+  }
+  #description {
+    font-size: 1.12rem;
   }
 }
 
@@ -99,19 +111,6 @@ select:focus,
 textarea:focus {
   outline: 1px solid #85c1e9;
   box-shadow: 0 0 3px 3px #2874a6;
-}
-
-input[type="checkbox"]:focus,
-input[type="radio"]:focus {
-  outline: 0px;
-  box-shadow: none;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-  width: 1.25rem;
-  height: 1.25rem;
-  vertical-align: middle;
 }
 
 #name,
@@ -148,6 +147,74 @@ span {
 
 .selection label {
   margin: 0 0 0.35rem 0;
+}
+
+.check_label {
+  position: relative;
+  cursor: pointer;
+  padding: 0 0 0 2rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.check_label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  border-radius: 5px;
+  position: absolute;
+  top: 0.2rem;
+  left: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: #fff;
+}
+
+.check_label:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.check_label input:checked ~ .checkmark {
+  background: #2874a6;
+}
+
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.check_label input:checked ~ .checkmark::after {
+  display: block;
+}
+
+.check_label .checkmark::after {
+  left: 0.4rem;
+  top: 0.1rem;
+  width: 0.35rem;
+  height: 0.6rem;
+  border: solid white;
+  border-width: 0 0.2rem 0.2rem 0;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-tranform: rotate(45deg);
+}
+
+.radiomark {
+  position: absolute;
+  top: 0.25rem;
+  left: 0;
+  height: 1.25rem;
+  width: 1.25rem;
+  background-color: #fff;
+  border-radius: 50%;
 }
 
 #comments {
