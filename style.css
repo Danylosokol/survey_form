@@ -228,11 +228,19 @@ span {
 }
 
 #submit {
-  background-color: #50c878;
+  background-color: #32cd32;
   border: 0px;
   border-radius: 5px;
   font-size: 1.05rem;
   height: 3rem;
   margin: 2rem 0;
   width: 100%;
+}
+
+#submit:hover {
+  background-color: #50c878;
+}
+
+#submit:active {
+  background-color: #90ee90;
 }
